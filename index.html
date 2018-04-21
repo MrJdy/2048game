@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"/>
+	<title>2048小游戏</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css"/>
+</head>
+<body>
+	<header>
+		<h1 class="game_title">2048小游戏</h1>
+		<a href="javascript:newGame();" id="newgame_btn">重新开始</a>
+	</header>
+	<main>
+		<table id="checkerBoard"></table>
+		<p class="number_title">得分：<span id="show_number"></span> 分</p>
+	</main>
+	<footer class="inner">
+		<p class="operation_pc">电脑：请用键盘方向键操作游戏</p>
+		<p class="operation_phone">手机：请滑动手机屏幕操作游戏</p>
+	</footer>
+	<script type="application/javascript" src="./js/main.js"></script>
+	<script type="application/javascript" src="./js/gameOver.js"></script>
+	<script type="application/javascript" src="./js/move.js"></script>
+</body>
+</html>

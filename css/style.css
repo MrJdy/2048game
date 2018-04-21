@@ -1,0 +1,66 @@
+body {
+	background-color: #ced9c5;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: "Microsoft YaHei";
+}
+/*header部分样式*/
+header{
+	display: block;
+	margin: 0px auto;
+	text-align: center;
+}
+header h1{
+	font-size: 1.5em;
+}
+header #newgame_btn{
+	width: 100px;
+	padding:10px;
+	background: #7da962;
+	font-family:inherit;
+	font-size: 20px;
+	color: #fff;
+	border-radius: 10px;
+	text-decoration: none;
+}
+/*table样式*/
+table {
+	margin: 0px auto;
+	margin-top: 30px;
+	border-radius: 10px;
+	background-color: #bfc0bb;
+	border-spacing: 8px;
+}
+td {
+	width: 80px;
+	height: 80px;
+	border-radius: 10px;
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+}
+
+/*footer部分样式*/
+main .number_title {
+	font-size: 0.8em;
+}
+main #show_number{
+	color: #f8563d;
+	font-size: 1.3em;
+}
+.inner {
+	height: 50px;
+	line-height: 1.8;
+    text-align: center;
+    padding: 15px;
+    font-size: .7em;
+    color: #656565;
+}
+footer .operation_pc{
+	border-top: 1px solid #bfc0bb;
+}
+footer .operation_phone{
+	border-bottom: 1px solid #bfc0bb;
+}
