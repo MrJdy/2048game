@@ -71,6 +71,8 @@ function init(){
 function Result(){
 	// 给分数初始值为0
 	let score = 0;
+	// 计数棋子的数量
+	let count = 0;
 	// 定义一个数值对应颜色的对象
 	let color_object = {
 		"":"#d3d3d3",
