@@ -65,8 +65,6 @@ function init(){
 		RandomNum();
 	}
 	Result();
-	// 初始化记分器，给得分置零
-	document.getElementById("show_number").innerHTML = 0;
 }
 
 /*给不同数值的棋子涂上不同的颜色，并计算得分*/
@@ -102,8 +100,15 @@ function Result(){
 		// 如果格子的数值不为空就把此格子上棋子的数值累加作为当前得分
 		if(text.innerHTML != ""){
 			score += parseInt(text.innerHTML);
+			count++;
 		}
 	}
-	// 显示得分
-	document.getElementById("show_number").innerHTML = score;
+	// 如果棋子数量为2时，即游戏刚初始化，此时分数置零
+	if(count == 2){
+		document.getElementById("show_number").innerHTML = 0;
+	}
+	// 如果棋子数量不是二则正常累加得分
+	else{
+		document.getElementById("show_number").innerHTML = score;
+	}
 }
