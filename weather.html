@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      function weather(result) {
+        if (result) {
+          document.write(result.result.today.temperature);
+          document.write(result.result.sk.wind_direction + result.result.sk.wind_strength);
+        }
+      }
+      weather();
+    </script>
+    <script src="http://v.juhe.cn/weather/index?cityname=%E5%8C%97%E4%BA%AC&dtype=json&format=2&key=4b00b6fcc3d8c3b4f1321bd68f71744e&callback=weather"></script>
+    <script>
+    </script>
+  </head>
+  <body>
+    <p id="temp"></p>
+    <p id="weather"></p>
+    <p id="desc"></p>
+  </body>
+</html>
